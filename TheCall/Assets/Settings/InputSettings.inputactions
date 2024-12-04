@@ -1044,7 +1044,7 @@
                     "name": "",
                     "id": "8ac4f41b-a0e5-4785-9772-7a52d8ac3830",
                     "path": "<Gamepad>/buttonSouth",
-                    "interactions": "Press(behavior=1)",
+                    "interactions": "Press",
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Confirm",

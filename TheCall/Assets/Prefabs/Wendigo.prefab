@@ -590,6 +590,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nma: {fileID: 6443310105166568186}
   Wendigo: {fileID: 6443310105166568167}
+  delayTime: 0
   hidingController: {fileID: 0}
   teleportHandler: {fileID: 6874005856793724109}
   pController: {fileID: 0}
@@ -597,6 +598,8 @@ MonoBehaviour:
   playerCamera: {fileID: 0}
   behindPlayerSpawn: {fileID: 0}
   RaycastOrigin: {fileID: 848137066}
+  isRunning: 0
+  isWalking: 0
   teleportTimerRunning: 0
   teleportTimerFinished: 0
   timerRunning: 0
@@ -609,8 +612,7 @@ MonoBehaviour:
   idleParam: NULL
   walkingParam: Walk
   chaseParam: Run
-  kill1Param: Kill1
-  kill2Param: Kill2
+  killParam: NULL
   howlParam: NULL
 --- !u!195 &6443310105166568186
 NavMeshAgent:
@@ -1570,19 +1572,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &5288428093902327364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6172840482703020593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3bebd768e569db40802a2a39391ff75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wendigoStateManager: {fileID: 6443310105166568184}
 --- !u!114 &8926237299430180833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1595,7 +1584,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b080fe27e35789e46bc3b73a252065f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpeaker: {fileID: 0}
+  wendigoSpeaker: {fileID: 0}
+  walkSound: {fileID: 8300000, guid: d3bf1cb7785e2664fadcb2dfaa6afbc6, type: 3}
+  runSound: {fileID: 0}
 --- !u!4 &6836892057518885003 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4521202f523af74489ca30e8674da83d, type: 3}

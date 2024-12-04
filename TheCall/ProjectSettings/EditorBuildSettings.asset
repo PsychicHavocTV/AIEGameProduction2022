@@ -8,10 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Design/Greybox V2.unity
     guid: e9b0760c93450f0478dfa837ecd53beb
-  - enabled: 1
-    path: Assets/Scenes/Final/Final Scene.unity
-    guid: f729a7fcdf68e9f478a06a13adb6574e
   m_configObjects: {}

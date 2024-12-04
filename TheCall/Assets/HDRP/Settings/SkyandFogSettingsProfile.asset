@@ -519,7 +519,7 @@ MonoBehaviour:
     m_Value: 0
   limitMin:
     m_OverrideState: 1
-    m_Value: 2.9293165
+    m_Value: 1.8984857
   limitMax:
     m_OverrideState: 1
     m_Value: 14
@@ -655,16 +655,16 @@ MonoBehaviour:
   active: 1
   postExposure:
     m_OverrideState: 1
-    m_Value: 3
+    m_Value: 0.63
   contrast:
     m_OverrideState: 0
-    m_Value: -19
+    m_Value: 0
   colorFilter:
     m_OverrideState: 0
-    m_Value: {r: 0.654902, g: 0.77254903, b: 0.77254903, a: 1}
+    m_Value: {r: 1, g: 0.6839622, b: 0.6839622, a: 1}
   hueShift:
     m_OverrideState: 0
-    m_Value: -3
+    m_Value: 0
   saturation:
     m_OverrideState: 0
     m_Value: 7.9

@@ -1,133 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1777087516
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1777087517}
-  - component: {fileID: 1777087518}
-  m_Layer: 0
-  m_Name: AudioSource
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1777087517
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1777087516}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.1166, y: 0.0341, z: -0.1342}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3485102846706103878}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &1777087518
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1777087516}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 79eb3c74d8d875d4d8532bb98ad41326, type: 2}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 769.48
-  Pan2D: 0
-  rolloffMode: 1
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.15555556
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &2902038932923533630
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,7 +126,6 @@ GameObject:
   - component: {fileID: 3485102846706103878}
   - component: {fileID: 4023733100002994701}
   - component: {fileID: 2813423330902974663}
-  - component: {fileID: 1176572532}
   m_Layer: 0
   m_Name: rock_falling_Final_V1
   m_TagString: Untagged
@@ -286,7 +157,6 @@ Transform:
   - {fileID: 5165529917204233176}
   - {fileID: 5165529916655877742}
   - {fileID: 19215484638412045}
-  - {fileID: 1777087517}
   m_Father: {fileID: 4023733100747405811}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -324,25 +194,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eC: {fileID: 2813423332383004117}
   particles: {fileID: 6245948875702600953}
---- !u!114 &1176572532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4257663333478362364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e6e77b1ecf97874fa358fa546320b89, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parameterName: 
-  animFinished: 0
-  targetAnimator: {fileID: 4023733100002994701}
-  animClip: {fileID: 1827226128182048838, guid: ffaaa680a54cc044f9253054a814151d, type: 3}
-  eventCollider: {fileID: 5165529916655877743}
-  eventSound: {fileID: 8300000, guid: df397998a86a96342884b7cbab5e5758, type: 3}
-  eventSpeaker: {fileID: 1777087518}
 --- !u!1 &5165529916655877737
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,8 +220,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5165529916655877737}
   m_LocalRotation: {x: -0, y: -0.2133248, z: -0, w: 0.97698134}
-  m_LocalPosition: {x: -0.0087, y: 0.0455, z: -0.3367}
-  m_LocalScale: {x: 1.715467, y: 1, z: 1}
+  m_LocalPosition: {x: 0.0379, y: 0.0455, z: -0.3897}
+  m_LocalScale: {x: 2.1318092, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3485102846706103878}
@@ -406,8 +257,6 @@ MonoBehaviour:
   targetAnimator: {fileID: 4023733100002994701}
   animClip: {fileID: 7400000, guid: a536ee6b3fdaacd4fab3748eaa4b0e47, type: 2}
   eventCollider: {fileID: 5165529916655877743}
-  eventSound: {fileID: 8300000, guid: df397998a86a96342884b7cbab5e5758, type: 3}
-  eventSpeaker: {fileID: 1777087518}
 --- !u!1 &5165529917204233179
 GameObject:
   m_ObjectHideFlags: 0
@@ -761,7 +610,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 715485689034668216, guid: ff58097e8bfb7ce4aa0f9299ebebdcbf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0087
+      value: 0.011449984
       objectReference: {fileID: 0}
     - target: {fileID: 715485689034668216, guid: ff58097e8bfb7ce4aa0f9299ebebdcbf, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1282,7 +1131,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 715485689034668216, guid: ff58097e8bfb7ce4aa0f9299ebebdcbf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.007
+      value: 0.011450141
       objectReference: {fileID: 0}
     - target: {fileID: 715485689034668216, guid: ff58097e8bfb7ce4aa0f9299ebebdcbf, type: 3}
       propertyPath: m_LocalPosition.z

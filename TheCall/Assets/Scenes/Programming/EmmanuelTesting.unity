@@ -1877,10 +1877,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 543756318825675642, guid: a63a357ee7a20354583929b045743df6, type: 3}
+      propertyPath: hsInteract
+      value: 
+      objectReference: {fileID: 1140105034}
+    - target: {fileID: 543756318825675642, guid: a63a357ee7a20354583929b045743df6, type: 3}
+      propertyPath: playerObjectives
+      value: 
+      objectReference: {fileID: 1437454333}
+    - target: {fileID: 543756318825675642, guid: a63a357ee7a20354583929b045743df6, type: 3}
+      propertyPath: statueInteraction
+      value: 
+      objectReference: {fileID: 67964939}
     - target: {fileID: 5773360767880781253, guid: a63a357ee7a20354583929b045743df6, type: 3}
       propertyPath: wsm
       value: 
       objectReference: {fileID: 793770929}
+    - target: {fileID: 5773360768403551062, guid: a63a357ee7a20354583929b045743df6, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 2147483711
+      objectReference: {fileID: 0}
     - target: {fileID: 6093254961723714220, guid: a63a357ee7a20354583929b045743df6, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2085,27 +2101,6 @@ CharacterController:
   m_CorrespondingSourceObject: {fileID: 543756318825675641, guid: a63a357ee7a20354583929b045743df6, type: 3}
   m_PrefabInstance: {fileID: 758776415}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &884055369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 884055365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 334e616ffc228b546867f80cbd6eb54d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerBody: {fileID: 884055365}
-  playerController: {fileID: 884055366}
-  playerCollider: {fileID: 884055367}
-  hidingSpots: []
-  currentSpotIndex: 99
-  canHide: 0
-  isHiding: 0
-  isHidden: 0
-  exitingHiding: 0
 --- !u!1 &901521032
 GameObject:
   m_ObjectHideFlags: 0
@@ -2895,6 +2890,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1140105034 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8100718732160429918, guid: 21317842ea530a842b83726e2a148009, type: 3}
+  m_PrefabInstance: {fileID: 8100718731026690068}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d5b6725587c4443bd7e415e0a32f7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1140741405
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3386,6 +3392,17 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &1437454333 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1797974058916340802, guid: a63a357ee7a20354583929b045743df6, type: 3}
+  m_PrefabInstance: {fileID: 758776415}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d7c94ae6e8cef4a9e75a1fc6c74ff1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1456563935
 GameObject:
   m_ObjectHideFlags: 0
@@ -4967,7 +4984,7 @@ PrefabInstance:
     - target: {fileID: 6443310105166568184, guid: 199fa694e9a0ab641a4a5c5eece73af1, type: 3}
       propertyPath: hidingController
       value: 
-      objectReference: {fileID: 884055369}
+      objectReference: {fileID: 0}
     - target: {fileID: 6443310105166568184, guid: 199fa694e9a0ab641a4a5c5eece73af1, type: 3}
       propertyPath: behindPlayerSpawn
       value: 

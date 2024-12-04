@@ -11,26 +11,13 @@ public class WendigoJumpscareState : BaseState
     public override void EnterState(WendigoStateManager wendigo)
     {
         Debug.Log("waiting behind player...");
-        wendigo.stateAnimator.ResetTrigger(wendigo.chaseParam);
-        wendigo.stateAnimator.ResetTrigger(wendigo.walkingParam);
-
-        int rng = Random.Range(0, 1);
-        if (rng == 0)
-        {
-            wendigo.stateAnimator.SetTrigger(wendigo.kill1Param);
-        }
-        else
-        {
-            wendigo.stateAnimator.SetTrigger(wendigo.kill2Param);
-        }
     }
 
     public override void UpdateState(WendigoStateManager wendigo)
     {
-        Vector3 targetPos = new Vector3(wendigo.playerRef.transform.position.x, wendigo.transform.position.y, wendigo.playerRef.transform.position.z);
-        wendigo.transform.LookAt(targetPos);
-        //BehindPlayerScare(wendigo);
-        //wendigo.TryTeleport(wendigo);
+        wendigo.transform.LookAt(wendigo.playerRef.transform.position);
+        BehindPlayerScare(wendigo);
+        wendigo.TryTeleport(wendigo);
     }
 
     public void BehindPlayerScare(WendigoStateManager wendigo)

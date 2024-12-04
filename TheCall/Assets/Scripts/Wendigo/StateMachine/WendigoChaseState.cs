@@ -50,8 +50,7 @@ public class WendigoChaseState : BaseState
                 }
             }
 
-            Vector3 targetPos = new Vector3(wendigo.playerRef.transform.position.x, wendigo.transform.position.y, wendigo.playerRef.transform.position.z);
-            wendigo.transform.LookAt(targetPos);
+            wendigo.transform.LookAt(wendigo.playerRef.transform);
 
             if (wendigo.hidingController.isHidden == false)
             {

@@ -13,7 +13,7 @@ public class WendigoStateManager : MonoBehaviour
     [SerializeField]
     NavMeshAgent nma; // Reference to the Nav Mesh Agent.
     [SerializeField]
-    public GameObject Wendigo; // Reference to the itself.
+    GameObject Wendigo; // Reference to the itself.
     WendigoRoamingState roamingState = new WendigoRoamingState(); // Wendigo's ROAMING state script.
     WendigoChaseState chaseState = new WendigoChaseState(); // Wendigo's CHASING state script.
     WendigoJumpscareState jumpscareState = new WendigoJumpscareState(); // Wendigo's JUMPSCARE event handling script.
@@ -42,8 +42,7 @@ public class WendigoStateManager : MonoBehaviour
     public string idleParam = "NULL";
     public string walkingParam = "NULL";
     public string chaseParam = "NULL";
-    public string kill1Param = "NULL";
-    public string kill2Param = "NULL";
+    public string killParam = "NULL";
     public string howlParam = "NULL";
 
 
@@ -106,8 +105,8 @@ public class WendigoStateManager : MonoBehaviour
                 GameManager.Instance.wendigoChasing = false;
             }
             currentState = roamingState; // Update currentState to roamingState.
-            //stateAnimator.ResetTrigger(chaseParam);
-            //stateAnimator.SetTrigger(walkingParam);
+            stateAnimator.ResetTrigger(chaseParam);
+            stateAnimator.SetTrigger(walkingParam);
             currentState.EnterState(this); // Start behaviour for the current state.
         }
     }
@@ -271,11 +270,10 @@ public class WendigoStateManager : MonoBehaviour
                 {
                     if (other.tag == "Player") // If the triggering object is the player
                     {
-                        currentState = jumpscareState; // Update currentState to roamingState.
+                        currentState = roamingState; // Update currentState to roamingState.
                         currentState.EnterState(this); // Start behaviour for the current state.
-                        pController.canMove = false; // Disable the PlayerController.
-                        nma.enabled = false;
-                        //GameManager.Instance.DoGameOver(Wendigo, playerRef); // Run GameOver behavour from the GameManager.
+                        pController.enabled = false; // Disable the PlayerController.
+                        GameManager.Instance.DoGameOver(Wendigo, playerRef); // Run GameOver behavour from the GameManager.
                     }
 
                     if (currentState == roamingState) // If the Wendigo is currently ROAMING
